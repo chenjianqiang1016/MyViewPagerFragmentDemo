@@ -79,7 +79,7 @@ class MyFragment : Fragment() {
                 positionOffsetPixels: Int
             ) {
 
-                //这句很关键
+                //有的博客中说要加这句话，但是实际测试发现，没有这个，也没异常。安全起见，还是保留
                 viewPagerLl_2?.invalidate()
 
             }
